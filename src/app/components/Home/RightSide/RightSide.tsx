@@ -27,7 +27,10 @@ function RightSide() {
       <div className="mt-5">
         <span className="text-gray-500 font-bold text-sm">Contacts</span>
         {users.map((user) => (
-          <div className="flex items-center mt-2 p-2 rounded-md hover:bg-gray-200 cursor-pointer">
+          <div
+            key={user.picture}
+            className="flex items-center mt-2 p-2 rounded-md hover:bg-gray-200 cursor-pointer"
+          >
             <div className="w-10 h-10 rounded-full flex justify-center items-center">
               <div className="w-10 h-10 overflow-hidden rounded-full">
                 <Image

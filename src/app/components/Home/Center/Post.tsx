@@ -69,8 +69,11 @@ function Post() {
             <div className="flex-grow border-t-2 border-gray-300"></div>
           </div>
           <div className="flex justify-around">
-            {postTools.map((tool) => (
-              <div className="w-full flex justify-center items-center gap-2 font-medium text-gray-500 hover:bg-gray-300 cursor-pointer mx-3 py-2 rounded-lg">
+            {postTools.map((tool, index) => (
+              <div
+                key={index}
+                className="w-full flex justify-center items-center gap-2 font-medium text-gray-500 hover:bg-gray-300 cursor-pointer mx-3 py-2 rounded-lg"
+              >
                 <i
                   data-visualcompletion="css-img"
                   style={{

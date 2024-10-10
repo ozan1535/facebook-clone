@@ -6,7 +6,10 @@ function LeftSide() {
   return (
     <div className="w-96 h-[100vh] overflow-y-auto pt-16 fixed hidden xl:block">
       {leftSideItems.map((item) => (
-        <div className="flex items-center m-2 p-2 rounded-md hover:bg-gray-200 cursor-pointer">
+        <div
+          key={item.src}
+          className="flex items-center m-2 p-2 rounded-md hover:bg-gray-200 cursor-pointer"
+        >
           <div className="w-10 h-10 rounded-full flex justify-center items-center">
             <div
               className={`w-10 h-10 overflow-hidden ${
@@ -37,7 +40,10 @@ function LeftSide() {
       </div>
 
       {shortCutsItems.map((item) => (
-        <div className="flex items-center m-2 p-2 rounded-md hover:bg-gray-200 cursor-pointer">
+        <div
+          key={item.src}
+          className="flex items-center m-2 p-2 rounded-md hover:bg-gray-200 cursor-pointer"
+        >
           <div className="w-10 h-10 rounded flex justify-center items-center">
             <Image
               src={item.src}
